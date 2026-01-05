@@ -10,6 +10,6 @@ env = { GOOGLE_API_KEY = "${GOOGLE_API_KEY}" }
 [config]
 episodes = [
   "scenarios/domain_adapt_crm/episodes/legal_to_crm.yml",
-  "scenarios/domain_adapt_crm/episodes/employment_discrimination.yml",
+  "scenarios/domain_adapt_crm/episodes/employer_discrimination.yml",
   "scenarios/domain_adapt_crm/episodes/contract_breach.yml"
 ]
