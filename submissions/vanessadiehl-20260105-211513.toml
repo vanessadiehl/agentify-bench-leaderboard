@@ -1,0 +1,15 @@
+[green_agent]
+agentbeats_id = "019b8f3f-e5e4-7301-8855-695bd1592b7e"
+env = { GOOGLE_API_KEY = "${GOOGLE_API_KEY}" }
+
+[[participants]]
+agentbeats_id = "019b8f44-ae38-75b0-89d7-fc256fa36446"
+name = "crm_mapper"
+env = { GOOGLE_API_KEY = "${GOOGLE_API_KEY}" }
+
+[config]
+episodes = [
+  "scenarios/domain_adapt_crm/episodes/legal_to_crm.yml",
+  "scenarios/domain_adapt_crm/episodes/employer_discrimination.yml",
+  "scenarios/domain_adapt_crm/episodes/contract_breach.yml"
+]

@@ -1,0 +1,1276 @@
+{
+  "participants": {
+    "crm_mapper": "019b8f44-ae38-75b0-89d7-fc256fa36446"
+  },
+  "results": [
+    {
+      "winner": "n/a",
+      "detail": {
+        "global_metrics": {
+          "avg_entity_f1": 0.462,
+          "avg_rel_f1": 0.347,
+          "avg_persistence": 1.0,
+          "num_episodes": 3,
+          "total_turns": 9
+        },
+        "episodes": [
+          {
+            "episode_id": "legal_to_crm_multiturn001",
+            "episode_title": "Legal \u2192 CRM: Construction defect case (Multi-turn)",
+            "avg_entity_f1": 0.579,
+            "avg_rel_f1": 0.543,
+            "avg_persistence": 1.0,
+            "turns": [
+              {
+                "turn": 1,
+                "parsed_ok": true,
+                "entity_metrics": {
+                  "f1": 0.6666666666666666,
+                  "precision": 0.6666666666666666,
+                  "recall": 0.6666666666666666,
+                  "tp": 2,
+                  "fp": 1,
+                  "fn": 1,
+                  "tp_list": [
+                    [
+                      "account",
+                      "acme construction"
+                    ],
+                    [
+                      "account",
+                      "skyline drywall"
+                    ]
+                  ],
+                  "fp_list": [
+                    [
+                      "case",
+                      "water intrusion defect claim"
+                    ]
+                  ],
+                  "fn_list": [
+                    [
+                      "case",
+                      "construction defect - water intrusion"
+                    ]
+                  ]
+                },
+                "rel_metrics": {
+                  "f1": 1.0,
+                  "precision": 1.0,
+                  "recall": 1.0,
+                  "tp": 2,
+                  "fp": 0,
+                  "fn": 0,
+                  "tp_list": [
+                    [
+                      "case",
+                      "counterparty",
+                      "skyline drywall"
+                    ],
+                    [
+                      "case",
+                      "primaryaccount",
+                      "acme construction"
+                    ]
+                  ],
+                  "fp_list": [],
+                  "fn_list": []
+                },
+                "persistence": 1.0
+              },
+              {
+                "turn": 2,
+                "parsed_ok": true,
+                "entity_metrics": {
+                  "f1": 0.5,
+                  "precision": 0.5,
+                  "recall": 0.5,
+                  "tp": 3,
+                  "fp": 3,
+                  "fn": 3,
+                  "tp_list": [
+                    [
+                      "account",
+                      "acme construction"
+                    ],
+                    [
+                      "account",
+                      "skyline drywall"
+                    ],
+                    [
+                      "contact",
+                      "sarah chen"
+                    ]
+                  ],
+                  "fp_list": [
+                    [
+                      "property",
+                      "lot 12 in the oakridge project"
+                    ],
+                    [
+                      "event",
+                      "inspection on june 15, 2023"
+                    ],
+                    [
+                      "case",
+                      "water intrusion defect claim"
+                    ]
+                  ],
+                  "fn_list": [
+                    [
+                      "interaction",
+                      "water intrusion discovery"
+                    ],
+                    [
+                      "case",
+                      "construction defect - water intrusion"
+                    ],
+                    [
+                      "property",
+                      "lot 12"
+                    ]
+                  ]
+                },
+                "rel_metrics": {
+                  "f1": 0.3636363636363636,
+                  "precision": 0.4,
+                  "recall": 0.3333333333333333,
+                  "tp": 2,
+                  "fp": 3,
+                  "fn": 4,
+                  "tp_list": [
+                    [
+                      "case",
+                      "counterparty",
+                      "skyline drywall"
+                    ],
+                    [
+                      "case",
+                      "primaryaccount",
+                      "acme construction"
+                    ]
+                  ],
+                  "fp_list": [
+                    [
+                      "case",
+                      "timelineevent",
+                      "inspection on june 15, 2023"
+                    ],
+                    [
+                      "lot 12 in the oakridge project",
+                      "subjectofdispute",
+                      "case"
+                    ],
+                    [
+                      "case",
+                      "subjectofdispute",
+                      "lot 12 in the oakridge project"
+                    ]
+                  ],
+                  "fn_list": [
+                    [
+                      "sarah chen",
+                      "employedby",
+                      "acme construction"
+                    ],
+                    [
+                      "property",
+                      "subjectproperty",
+                      "case"
+                    ],
+                    [
+                      "skyline drywall",
+                      "responsiblefor",
+                      "interaction"
+                    ],
+                    [
+                      "interaction",
+                      "discoveredissue",
+                      "case"
+                    ]
+                  ]
+                },
+                "persistence": 1.0
+              },
+              {
+                "turn": 3,
+                "parsed_ok": true,
+                "entity_metrics": {
+                  "f1": 0.5714285714285714,
+                  "precision": 0.5714285714285714,
+                  "recall": 0.5714285714285714,
+                  "tp": 4,
+                  "fp": 3,
+                  "fn": 3,
+                  "tp_list": [
+                    [
+                      "account",
+                      "acme construction"
+                    ],
+                    [
+                      "account",
+                      "skyline drywall"
+                    ],
+                    [
+                      "account",
+                      "buildright inc"
+                    ],
+                    [
+                      "contact",
+                      "sarah chen"
+                    ]
+                  ],
+                  "fp_list": [
+                    [
+                      "property",
+                      "lot 12 in the oakridge project"
+                    ],
+                    [
+                      "event",
+                      "inspection on june 15, 2023"
+                    ],
+                    [
+                      "case",
+                      "water intrusion defect claim"
+                    ]
+                  ],
+                  "fn_list": [
+                    [
+                      "interaction",
+                      "water intrusion discovery"
+                    ],
+                    [
+                      "case",
+                      "construction defect - water intrusion"
+                    ],
+                    [
+                      "property",
+                      "lot 12"
+                    ]
+                  ]
+                },
+                "rel_metrics": {
+                  "f1": 0.26666666666666666,
+                  "precision": 0.2857142857142857,
+                  "recall": 0.25,
+                  "tp": 2,
+                  "fp": 5,
+                  "fn": 6,
+                  "tp_list": [
+                    [
+                      "case",
+                      "counterparty",
+                      "skyline drywall"
+                    ],
+                    [
+                      "case",
+                      "primaryaccount",
+                      "acme construction"
+                    ]
+                  ],
+                  "fp_list": [
+                    [
+                      "sarah chen",
+                      "affiliation",
+                      "buildright inc"
+                    ],
+                    [
+                      "lot 12 in the oakridge project",
+                      "subjectofdispute",
+                      "case"
+                    ],
+                    [
+                      "case",
+                      "timelineevent",
+                      "inspection on june 15, 2023"
+                    ],
+                    [
+                      "buildright inc",
+                      "contractor",
+                      "skyline drywall"
+                    ],
+                    [
+                      "case",
+                      "subjectofdispute",
+                      "lot 12 in the oakridge project"
+                    ]
+                  ],
+                  "fn_list": [
+                    [
+                      "skyline drywall",
+                      "responsiblefor",
+                      "interaction"
+                    ],
+                    [
+                      "interaction",
+                      "discoveredissue",
+                      "case"
+                    ],
+                    [
+                      "sarah chen",
+                      "employedby",
+                      "buildright inc"
+                    ],
+                    [
+                      "buildright inc",
+                      "contractedby",
+                      "acme construction"
+                    ],
+                    [
+                      "buildright inc",
+                      "hired",
+                      "skyline drywall"
+                    ],
+                    [
+                      "property",
+                      "subjectproperty",
+                      "case"
+                    ]
+                  ]
+                },
+                "persistence": 1.0
+              }
+            ]
+          },
+          {
+            "episode_id": "employment_discrimination_multiturn001",
+            "episode_title": "Legal \u2192 CRM: Employment discrimination case (Multi-turn)",
+            "avg_entity_f1": 0.321,
+            "avg_rel_f1": 0.0,
+            "avg_persistence": 1.0,
+            "turns": [
+              {
+                "turn": 1,
+                "parsed_ok": true,
+                "entity_metrics": {
+                  "f1": 0.25,
+                  "precision": 0.3333333333333333,
+                  "recall": 0.2,
+                  "tp": 1,
+                  "fp": 2,
+                  "fn": 4,
+                  "tp_list": [
+                    [
+                      "contact",
+                      "marcus johnson"
+                    ]
+                  ],
+                  "fp_list": [
+                    [
+                      "case",
+                      "racial discrimination lawsuit"
+                    ],
+                    [
+                      "account",
+                      "techcore inc."
+                    ]
+                  ],
+                  "fn_list": [
+                    [
+                      "property",
+                      "federal district court - northern district"
+                    ],
+                    [
+                      "account",
+                      "techcore inc"
+                    ],
+                    [
+                      "case",
+                      "employment discrimination lawsuit"
+                    ],
+                    [
+                      "event",
+                      "wrongful termination claim"
+                    ]
+                  ]
+                },
+                "rel_metrics": {
+                  "f1": 0.0,
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "tp": 0,
+                  "fp": 1,
+                  "fn": 4,
+                  "tp_list": [],
+                  "fp_list": [
+                    [
+                      "case",
+                      "counterparty",
+                      "techcore inc."
+                    ]
+                  ],
+                  "fn_list": [
+                    [
+                      "marcus johnson",
+                      "affiliation",
+                      "techcore inc"
+                    ],
+                    [
+                      "case",
+                      "subjectofdispute",
+                      "federal district court - northern district"
+                    ],
+                    [
+                      "case",
+                      "counterparty",
+                      "marcus johnson"
+                    ],
+                    [
+                      "case",
+                      "primaryaccount",
+                      "techcore inc"
+                    ]
+                  ]
+                },
+                "persistence": 1.0
+              },
+              {
+                "turn": 2,
+                "parsed_ok": true,
+                "entity_metrics": {
+                  "f1": 0.33333333333333326,
+                  "precision": 0.42857142857142855,
+                  "recall": 0.2727272727272727,
+                  "tp": 3,
+                  "fp": 4,
+                  "fn": 8,
+                  "tp_list": [
+                    [
+                      "contact",
+                      "david chen"
+                    ],
+                    [
+                      "contact",
+                      "marcus johnson"
+                    ],
+                    [
+                      "contact",
+                      "jennifer wong"
+                    ]
+                  ],
+                  "fp_list": [
+                    [
+                      "case",
+                      "racial discrimination lawsuit"
+                    ],
+                    [
+                      "event",
+                      "hostile environment incidents"
+                    ],
+                    [
+                      "account",
+                      "techcore inc."
+                    ],
+                    [
+                      "property",
+                      "3rd floor offices"
+                    ]
+                  ],
+                  "fn_list": [
+                    [
+                      "event",
+                      "hostile work environment during team meetings"
+                    ],
+                    [
+                      "property",
+                      "federal district court - northern district"
+                    ],
+                    [
+                      "property",
+                      "3rd floor offices - techcore inc"
+                    ],
+                    [
+                      "interaction",
+                      "witness statement from patricia rodriguez"
+                    ],
+                    [
+                      "contact",
+                      "patricia rodriguez"
+                    ],
+                    [
+                      "account",
+                      "techcore inc"
+                    ],
+                    [
+                      "case",
+                      "employment discrimination lawsuit"
+                    ],
+                    [
+                      "event",
+                      "wrongful termination claim"
+                    ]
+                  ]
+                },
+                "rel_metrics": {
+                  "f1": 0.0,
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "tp": 0,
+                  "fp": 7,
+                  "fn": 11,
+                  "tp_list": [],
+                  "fp_list": [
+                    [
+                      "hostile environment incidents",
+                      "discoveredissue",
+                      "case"
+                    ],
+                    [
+                      "case",
+                      "counterparty",
+                      "techcore inc."
+                    ],
+                    [
+                      "jennifer wong",
+                      "affiliation",
+                      "techcore inc."
+                    ],
+                    [
+                      "marcus johnson",
+                      "affiliation",
+                      "jennifer wong"
+                    ],
+                    [
+                      "marcus johnson",
+                      "affiliation",
+                      "techcore inc."
+                    ],
+                    [
+                      "3rd floor offices",
+                      "subjectofdispute",
+                      "case"
+                    ],
+                    [
+                      "david chen",
+                      "affiliation",
+                      "techcore inc."
+                    ]
+                  ],
+                  "fn_list": [
+                    [
+                      "marcus johnson",
+                      "affiliation",
+                      "techcore inc"
+                    ],
+                    [
+                      "case",
+                      "discoveredissue",
+                      "interaction"
+                    ],
+                    [
+                      "case",
+                      "timelineevent",
+                      "hostile work environment during team meetings"
+                    ],
+                    [
+                      "david chen",
+                      "affiliation",
+                      "techcore inc"
+                    ],
+                    [
+                      "case",
+                      "primaryaccount",
+                      "techcore inc"
+                    ],
+                    [
+                      "case",
+                      "subjectofdispute",
+                      "federal district court - northern district"
+                    ],
+                    [
+                      "jennifer wong",
+                      "affiliation",
+                      "techcore inc"
+                    ],
+                    [
+                      "patricia rodriguez",
+                      "affiliation",
+                      "techcore inc"
+                    ],
+                    [
+                      "case",
+                      "subjectofdispute",
+                      "3rd floor offices - techcore inc"
+                    ],
+                    [
+                      "case",
+                      "counterparty",
+                      "marcus johnson"
+                    ],
+                    [
+                      "jennifer wong",
+                      "affiliation",
+                      "marcus johnson"
+                    ]
+                  ]
+                },
+                "persistence": 1.0
+              },
+              {
+                "turn": 3,
+                "parsed_ok": true,
+                "entity_metrics": {
+                  "f1": 0.380952380952381,
+                  "precision": 0.4,
+                  "recall": 0.36363636363636365,
+                  "tp": 4,
+                  "fp": 6,
+                  "fn": 7,
+                  "tp_list": [
+                    [
+                      "contact",
+                      "robert lee"
+                    ],
+                    [
+                      "contact",
+                      "david chen"
+                    ],
+                    [
+                      "contact",
+                      "marcus johnson"
+                    ],
+                    [
+                      "contact",
+                      "jennifer wong"
+                    ]
+                  ],
+                  "fp_list": [
+                    [
+                      "account",
+                      "techcore inc."
+                    ],
+                    [
+                      "event",
+                      "discriminatory comments in a march 2023 meeting"
+                    ],
+                    [
+                      "contact",
+                      "sarah mitchell"
+                    ],
+                    [
+                      "event",
+                      "hostile environment incidents"
+                    ],
+                    [
+                      "case",
+                      "racial discrimination lawsuit"
+                    ],
+                    [
+                      "property",
+                      "3rd floor offices"
+                    ]
+                  ],
+                  "fn_list": [
+                    [
+                      "property",
+                      "federal district court - northern district"
+                    ],
+                    [
+                      "event",
+                      "discriminatory comments by ceo in march 2023 meeting"
+                    ],
+                    [
+                      "property",
+                      "3rd floor offices - techcore inc"
+                    ],
+                    [
+                      "account",
+                      "techcore inc"
+                    ],
+                    [
+                      "case",
+                      "employment discrimination lawsuit"
+                    ],
+                    [
+                      "interaction",
+                      "witness statement from robert lee"
+                    ],
+                    [
+                      "event",
+                      "wrongful termination claim"
+                    ]
+                  ]
+                },
+                "rel_metrics": {
+                  "f1": 0.0,
+                  "precision": 0.0,
+                  "recall": 0.0,
+                  "tp": 0,
+                  "fp": 8,
+                  "fn": 12,
+                  "tp_list": [],
+                  "fp_list": [
+                    [
+                      "hostile environment incidents",
+                      "discoveredissue",
+                      "case"
+                    ],
+                    [
+                      "case",
+                      "counterparty",
+                      "techcore inc."
+                    ],
+                    [
+                      "jennifer wong",
+                      "affiliation",
+                      "techcore inc."
+                    ],
+                    [
+                      "marcus johnson",
+                      "affiliation",
+                      "jennifer wong"
+                    ],
+                    [
+                      "marcus johnson",
+                      "affiliation",
+                      "techcore inc."
+                    ],
+                    [
+                      "discriminatory comments in a march 2023 meeting",
+                      "timelineevent",
+                      "case"
+                    ],
+                    [
+                      "3rd floor offices",
+                      "subjectofdispute",
+                      "case"
+                    ],
+                    [
+                      "david chen",
+                      "affiliation",
+                      "techcore inc."
+                    ]
+                  ],
+                  "fn_list": [
+                    [
+                      "marcus johnson",
+                      "affiliation",
+                      "techcore inc"
+                    ],
+                    [
+                      "robert lee",
+                      "affiliation",
+                      "techcore inc"
+                    ],
+                    [
+                      "case",
+                      "discoveredissue",
+                      "robert lee"
+                    ],
+                    [
+                      "jennifer wong",
+                      "affiliation",
+                      "marcus johnson"
+                    ],
+                    [
+                      "david chen",
+                      "affiliation",
+                      "techcore inc"
+                    ],
+                    [
+                      "case",
+                      "primaryaccount",
+                      "techcore inc"
+                    ],
+                    [
+                      "case",
+                      "subjectofdispute",
+                      "federal district court - northern district"
+                    ],
+                    [
+                      "jennifer wong",
+                      "affiliation",
+                      "techcore inc"
+                    ],
+                    [
+                      "case",
+                      "subjectofdispute",
+                      "3rd floor offices - techcore inc"
+                    ],
+                    [
+                      "case",
+                      "timelineevent",
+                      "discriminatory comments by ceo in march 2023 meeting"
+                    ],
+                    [
+                      "case",
+                      "counterparty",
+                      "marcus johnson"
+                    ],
+                    [
+                      "david chen",
+                      "responsiblefor",
+                      "case"
+                    ]
+                  ]
+                },
+                "persistence": 1.0
+              }
+            ]
+          },
+          {
+            "episode_id": "contract_breach_multiturn001",
+            "episode_title": "Legal \u2192 CRM: Commercial contract breach (Multi-turn)",
+            "avg_entity_f1": 0.484,
+            "avg_rel_f1": 0.497,
+            "avg_persistence": 1.0,
+            "turns": [
+              {
+                "turn": 1,
+                "parsed_ok": true,
+                "entity_metrics": {
+                  "f1": 0.4000000000000001,
+                  "precision": 0.4,
+                  "recall": 0.4,
+                  "tp": 2,
+                  "fp": 3,
+                  "fn": 3,
+                  "tp_list": [
+                    [
+                      "account",
+                      "buildforce contractors"
+                    ],
+                    [
+                      "account",
+                      "greenleaf supplies"
+                    ]
+                  ],
+                  "fp_list": [
+                    [
+                      "case",
+                      "breach of contract"
+                    ],
+                    [
+                      "property",
+                      "supply agreement"
+                    ],
+                    [
+                      "event",
+                      "failed to deliver on three scheduled shipments in q3 2023"
+                    ]
+                  ],
+                  "fn_list": [
+                    [
+                      "event",
+                      "missed delivery q3 2023"
+                    ],
+                    [
+                      "case",
+                      "commercial contract breach - steel supply agreement"
+                    ],
+                    [
+                      "property",
+                      "steel beam supply agreement - $500,000"
+                    ]
+                  ]
+                },
+                "rel_metrics": {
+                  "f1": 0.5,
+                  "precision": 0.5,
+                  "recall": 0.5,
+                  "tp": 2,
+                  "fp": 2,
+                  "fn": 2,
+                  "tp_list": [
+                    [
+                      "case",
+                      "counterparty",
+                      "buildforce contractors"
+                    ],
+                    [
+                      "case",
+                      "primaryaccount",
+                      "greenleaf supplies"
+                    ]
+                  ],
+                  "fp_list": [
+                    [
+                      "case",
+                      "timelineevent",
+                      "failed to deliver on three scheduled shipments in q3 2023"
+                    ],
+                    [
+                      "case",
+                      "subjectofdispute",
+                      "supply agreement"
+                    ]
+                  ],
+                  "fn_list": [
+                    [
+                      "case",
+                      "subjectofdispute",
+                      "steel beam supply agreement - $500,000"
+                    ],
+                    [
+                      "case",
+                      "timelineevent",
+                      "missed delivery q3 2023"
+                    ]
+                  ]
+                },
+                "persistence": 1.0
+              },
+              {
+                "turn": 2,
+                "parsed_ok": true,
+                "entity_metrics": {
+                  "f1": 0.5714285714285713,
+                  "precision": 0.6,
+                  "recall": 0.5454545454545454,
+                  "tp": 6,
+                  "fp": 4,
+                  "fn": 5,
+                  "tp_list": [
+                    [
+                      "account",
+                      "greenleaf supplies"
+                    ],
+                    [
+                      "account",
+                      "adams & associates"
+                    ],
+                    [
+                      "account",
+                      "buildforce contractors"
+                    ],
+                    [
+                      "contact",
+                      "michael torres"
+                    ],
+                    [
+                      "contact",
+                      "jennifer park"
+                    ],
+                    [
+                      "contact",
+                      "greg stevens"
+                    ]
+                  ],
+                  "fp_list": [
+                    [
+                      "interaction",
+                      "preliminary damages report"
+                    ],
+                    [
+                      "case",
+                      "breach of contract"
+                    ],
+                    [
+                      "property",
+                      "supply agreement"
+                    ],
+                    [
+                      "event",
+                      "failed to deliver on three scheduled shipments in q3 2023"
+                    ]
+                  ],
+                  "fn_list": [
+                    [
+                      "interaction",
+                      "preliminary damages report from adams & associates"
+                    ],
+                    [
+                      "property",
+                      "steel beam supply agreement - $500,000"
+                    ],
+                    [
+                      "event",
+                      "missed delivery q3 2023"
+                    ],
+                    [
+                      "property",
+                      "damages claim - $150,000"
+                    ],
+                    [
+                      "case",
+                      "commercial contract breach - steel supply agreement"
+                    ]
+                  ]
+                },
+                "rel_metrics": {
+                  "f1": 0.5555555555555556,
+                  "precision": 0.625,
+                  "recall": 0.5,
+                  "tp": 5,
+                  "fp": 3,
+                  "fn": 5,
+                  "tp_list": [
+                    [
+                      "case",
+                      "primaryaccount",
+                      "greenleaf supplies"
+                    ],
+                    [
+                      "case",
+                      "counterparty",
+                      "buildforce contractors"
+                    ],
+                    [
+                      "greg stevens",
+                      "affiliation",
+                      "buildforce contractors"
+                    ],
+                    [
+                      "michael torres",
+                      "affiliation",
+                      "greenleaf supplies"
+                    ],
+                    [
+                      "jennifer park",
+                      "affiliation",
+                      "buildforce contractors"
+                    ]
+                  ],
+                  "fp_list": [
+                    [
+                      "case",
+                      "timelineevent",
+                      "failed to deliver on three scheduled shipments in q3 2023"
+                    ],
+                    [
+                      "adams & associates",
+                      "contractor",
+                      "case"
+                    ],
+                    [
+                      "case",
+                      "subjectofdispute",
+                      "supply agreement"
+                    ]
+                  ],
+                  "fn_list": [
+                    [
+                      "adams & associates",
+                      "responsiblefor",
+                      "case"
+                    ],
+                    [
+                      "case",
+                      "discoveredissue",
+                      "interaction"
+                    ],
+                    [
+                      "case",
+                      "subjectofdispute",
+                      "steel beam supply agreement - $500,000"
+                    ],
+                    [
+                      "case",
+                      "subjectofdispute",
+                      "damages claim - $150,000"
+                    ],
+                    [
+                      "case",
+                      "timelineevent",
+                      "missed delivery q3 2023"
+                    ]
+                  ]
+                },
+                "persistence": 1.0
+              },
+              {
+                "turn": 3,
+                "parsed_ok": true,
+                "entity_metrics": {
+                  "f1": 0.48000000000000004,
+                  "precision": 0.5,
+                  "recall": 0.46153846153846156,
+                  "tp": 6,
+                  "fp": 6,
+                  "fn": 7,
+                  "tp_list": [
+                    [
+                      "account",
+                      "greenleaf supplies"
+                    ],
+                    [
+                      "account",
+                      "adams & associates"
+                    ],
+                    [
+                      "account",
+                      "buildforce contractors"
+                    ],
+                    [
+                      "contact",
+                      "lisa chen"
+                    ],
+                    [
+                      "contact",
+                      "michael torres"
+                    ],
+                    [
+                      "contact",
+                      "jennifer park"
+                    ]
+                  ],
+                  "fp_list": [
+                    [
+                      "event",
+                      "failed to deliver on three scheduled shipments in q3 2023"
+                    ],
+                    [
+                      "interaction",
+                      "preliminary damages report"
+                    ],
+                    [
+                      "event",
+                      "june 2023 email"
+                    ],
+                    [
+                      "property",
+                      "supply agreement"
+                    ],
+                    [
+                      "case",
+                      "breach of contract"
+                    ],
+                    [
+                      "contact",
+                      "greg stevens"
+                    ]
+                  ],
+                  "fn_list": [
+                    [
+                      "interaction",
+                      "preliminary damages report from adams & associates"
+                    ],
+                    [
+                      "property",
+                      "steel beam supply agreement - $500,000"
+                    ],
+                    [
+                      "event",
+                      "missed delivery q3 2023"
+                    ],
+                    [
+                      "interaction",
+                      "negligence finding - known risks proceeding"
+                    ],
+                    [
+                      "case",
+                      "commercial contract breach - steel supply agreement"
+                    ],
+                    [
+                      "property",
+                      "damages claim - $200,000"
+                    ],
+                    [
+                      "event",
+                      "supply chain capacity warning email june 2023"
+                    ]
+                  ]
+                },
+                "rel_metrics": {
+                  "f1": 0.43478260869565216,
+                  "precision": 0.45454545454545453,
+                  "recall": 0.4166666666666667,
+                  "tp": 5,
+                  "fp": 6,
+                  "fn": 7,
+                  "tp_list": [
+                    [
+                      "case",
+                      "primaryaccount",
+                      "greenleaf supplies"
+                    ],
+                    [
+                      "case",
+                      "counterparty",
+                      "buildforce contractors"
+                    ],
+                    [
+                      "lisa chen",
+                      "affiliation",
+                      "buildforce contractors"
+                    ],
+                    [
+                      "michael torres",
+                      "affiliation",
+                      "greenleaf supplies"
+                    ],
+                    [
+                      "jennifer park",
+                      "affiliation",
+                      "buildforce contractors"
+                    ]
+                  ],
+                  "fp_list": [
+                    [
+                      "adams & associates",
+                      "contractor",
+                      "case"
+                    ],
+                    [
+                      "greg stevens",
+                      "affiliation",
+                      "buildforce contractors"
+                    ],
+                    [
+                      "case",
+                      "timelineevent",
+                      "failed to deliver on three scheduled shipments in q3 2023"
+                    ],
+                    [
+                      "june 2023 email",
+                      "discoveredissue",
+                      "case"
+                    ],
+                    [
+                      "case",
+                      "subjectofdispute",
+                      "supply agreement"
+                    ],
+                    [
+                      "buildforce contractors",
+                      "responsiblefor",
+                      "june 2023 email"
+                    ]
+                  ],
+                  "fn_list": [
+                    [
+                      "adams & associates",
+                      "responsiblefor",
+                      "case"
+                    ],
+                    [
+                      "case",
+                      "subjectofdispute",
+                      "steel beam supply agreement - $500,000"
+                    ],
+                    [
+                      "jennifer park",
+                      "responsiblefor",
+                      "case"
+                    ],
+                    [
+                      "case",
+                      "timelineevent",
+                      "missed delivery q3 2023"
+                    ],
+                    [
+                      "case",
+                      "discoveredissue",
+                      "negligence finding - known risks proceeding"
+                    ],
+                    [
+                      "case",
+                      "subjectofdispute",
+                      "damages claim - $200,000"
+                    ],
+                    [
+                      "case",
+                      "timelineevent",
+                      "supply chain capacity warning email june 2023"
+                    ]
+                  ]
+                },
+                "persistence": 1.0
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
